@@ -1,0 +1,16 @@
+$def with(data)
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Nombre</th>
+    </thead>
+    <tbody>
+        $for d in data:
+        {
+            <tr>
+                <th>$d["id"]</th>
+                <th>$d["nombre"]</th>      
+            </tr>
+        }
+    </tbody>
+</table>
