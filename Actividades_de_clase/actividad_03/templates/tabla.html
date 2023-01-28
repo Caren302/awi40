@@ -1,16 +1,14 @@
-$def with(data)
+$def with(datos)
 <table>
     <thead>
         <th>ID</th>
         <th>Nombre</th>
     </thead>
     <tbody>
-        $for d in data:
-        {
+        $for d,x in datos:
             <tr>
-                <th>$d["id"]</th>
-                <th>$d["nombre"]</th>      
+                <th>$d</th>
+                <th>$x</th>      
             </tr>
-        }
     </tbody>
 </table>
